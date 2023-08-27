@@ -19,9 +19,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@test.com',
          ]);
 
-         User::factory(10)
+         \App\Models\User::factory(10)
          ->has(
-            StudentCard::factory(),
+            \App\Models\StudentCard::factory(),
          )
          ->create();
     }

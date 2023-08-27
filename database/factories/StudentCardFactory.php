@@ -19,7 +19,7 @@ class StudentCardFactory extends Factory
     public function definition(): array
     {
         return [
-            'school' => fake()->randonElement(SchoolEnum::cases()),
+            'school' => fake()->randomElement(SchoolEnum::cases()),
             'description' => fake()->text,
             'is_internal' => fake()->boolean,
             'user_id' => User::factory(),

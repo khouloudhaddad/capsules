@@ -23,6 +23,6 @@ class DatabaseSeeder extends Seeder
          ->has(
             StudentCard::factory(),
          )
-         ->create()
+         ->create();
     }
 }

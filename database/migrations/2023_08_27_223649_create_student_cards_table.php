@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('student_cards', function (Blueprint $table) {
             $table->id();
             $table->string('school')->default(\App\Enums\SchoolEnum::SCHOOL_1->value);
-            $table->text('description)->nullable();
-            $table->boolean('is_internal)->default(false);
-            $table->foreignId('user_id)->constrained()->cascadeOnDelete();
+            $table->text('description')->nullable();
+            $table->boolean('is_internal')->default(false);
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->date('date_of_birth');
-            
+
             $table->timestamps();
         });
     }

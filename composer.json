@@ -57,6 +57,11 @@
         ],
         "pest" :[
             "@php ./vendor/bin/pest"
+        ],
+        "clean": [
+            "@php ./vendor/bin/pint",
+            "@php ./vendor/bin/phpstan analyse",
+            "@php ./vendor/bin/pest"
         ]
     },
     "extra": {

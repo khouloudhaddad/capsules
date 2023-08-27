@@ -1,10 +1,7 @@
 <?php
 
-namespace Tests\Feature;
-use function Pest\Laravel\get;
+it('returns a successful response', function () {
+    $response = $this->get('/');
 
-it('has a new welcome page', function(){
-
-    get('/')->assertOk();
-
+    $response->assertStatus(200);
 });
